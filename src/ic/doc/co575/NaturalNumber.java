@@ -9,7 +9,8 @@ public class NaturalNumber implements Expression {
     if (val <= 0) {
       System.out.println(val);
       throw new NonPositiveNumber();
-      //throw new IllegalArgumentException(val + " is not a natural number (i.e., positive integer)");
+      // throw new IllegalArgumentException(val + " is not a natural number (i.e., positive
+      // integer)");
     }
     value = val;
   }
@@ -25,14 +26,16 @@ public class NaturalNumber implements Expression {
   }
 
   @Override
-  public int depth() { return 0; }
+  public int depth() {
+    return 0;
+  }
 
   public boolean equals(Object e) {
     if (this.evaluate() == ((Expression) e).evaluate()) {
       return true;
     }
     return false;
-}
+  }
 
   public int compareTo(Expression other) {
 

@@ -6,5 +6,4 @@ public class NonWholeNumber extends InvalidNaturalNumber {
     super();
     System.out.println("Non whole number");
   }
-
 }
