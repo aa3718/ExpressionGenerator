@@ -69,7 +69,8 @@ public class ExpressionFactoryTest {
   @Test
   public void checkEquals() {
     Expression e = ExpressionFactory.randomExpression(3);
-    Expression f = new Subtraction(new Addition(e, new NaturalNumber(1)), new NaturalNumber(1));
+    Expression f = new Subtraction(new Addition(e, new NaturalNumber(1)),
+        new NaturalNumber(1));
 
     assertThat(
         String.format("Expressions %s and %s should be equal according to equals()", e, f),
