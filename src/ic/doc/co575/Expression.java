@@ -9,4 +9,6 @@ interface Expression extends Comparable<Expression> {
   boolean equals(Object e);
 
   int compareTo(Expression other);
+
+
 }
