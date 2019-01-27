@@ -1,12 +1,9 @@
 package ic.doc.co575;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
 
-import ic.doc.co575.Addition;
-import ic.doc.co575.Expression;
-import ic.doc.co575.NaturalNumber;
-import ic.doc.co575.Subtraction;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
@@ -93,5 +90,4 @@ public class ExpressionFactoryTest {
       }
     };
   }
-
 }

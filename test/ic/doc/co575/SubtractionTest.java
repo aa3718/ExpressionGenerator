@@ -4,9 +4,6 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
 
-import ic.doc.co575.NaturalNumber;
-import ic.doc.co575.NonPositiveNumber;
-import ic.doc.co575.Subtraction;
 import org.junit.Test;
 
 public class SubtractionTest {

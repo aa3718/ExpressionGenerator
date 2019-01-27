@@ -3,7 +3,6 @@ package ic.doc.co575;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-import ic.doc.co575.NaturalNumber;
 import org.junit.Test;
 
 public class NaturalNumberTest {

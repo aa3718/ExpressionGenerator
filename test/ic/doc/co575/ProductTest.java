@@ -3,8 +3,6 @@ package ic.doc.co575;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import ic.doc.co575.NaturalNumber;
-import ic.doc.co575.Product;
 import org.junit.Test;
 
 public class ProductTest {

@@ -63,7 +63,6 @@ public class AdditionTest {
     Addition c = new Addition(new NaturalNumber(1), b);
     Addition d = new Addition(new NaturalNumber(1), c);
 
-
     int expectedOutput = 4;
     int output = d.getRight().evaluate();
     System.out.println(d.depth + " depth");
