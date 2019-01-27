@@ -39,6 +39,10 @@ public class ExpressionFactory {
 
           case 3:
             return new Product(randomExpression(dleft - 1), randomExpression(dright - 1));
+
+          default:
+            System.out.println("Default switch case reached");
+            break;
         }
       } catch (InvalidNaturalNumber e) {
 
