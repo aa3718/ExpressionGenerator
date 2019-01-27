@@ -27,12 +27,12 @@ public class NaturalNumber implements Expression {
   @Override
   public int depth() { return 0; }
 
-  public boolean equals(Expression e) {
-    if (this.evaluate() == e.evaluate()) {
+  public boolean equals(Object e) {
+    if (this.evaluate() == ((Expression) e).evaluate()) {
       return true;
     }
     return false;
-  }
+}
 
   public int compareTo(Expression other) {
 
