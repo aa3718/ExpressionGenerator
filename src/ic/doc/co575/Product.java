@@ -6,28 +6,19 @@ public class Product extends BinaryExpression {
     super(left, right);
   }
 
-  NaturalNumber Nn = new NaturalNumber(left * right);
-  /*
-      private final int value;
+  private NaturalNumber natNum = new NaturalNumber(left * right);
 
-      public Product(Expression left, Expression right) {
-
-        value = left.evaluate() + right.evaluate();
-
-      }
-  */
   @Override
   public String toString() {
     return String.valueOf(this.evaluate());
   }
 
   public int evaluate() {
-    return Nn.evaluate();
-    // return this.left * this.right;
+    return natNum.evaluate();
   }
 
   public int depth() {
-    this.depth = Math.max(this.left_exp.depth(), this.right_exp.depth()) + 1;
+    this.depth = Math.max(this.leftExp.depth(), this.rightExp.depth()) + 1;
     return this.depth;
   }
 

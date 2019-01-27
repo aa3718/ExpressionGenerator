@@ -8,7 +8,7 @@ public class ExpressionArrayFactory {
 
     Expression[] arrayExpressions = new Expression[maxSize];
 
-    Expression it = null;
+    Expression it;
 
     for (int i = 0; i < maxSize; i++) {
       it = ExpressionFactory.randomExpression(maxDepth);
@@ -16,17 +16,6 @@ public class ExpressionArrayFactory {
     }
     Arrays.sort(arrayExpressions);
 
-/*
-    for (int i = 0; i < maxSize; i++) {
-      for (int j = i; j < maxSize; j++) {
-        if (arrayExpressions[i].evaluate() > arrayExpressions[j].evaluate()) {
-          Expression temp = arrayExpressions[i];
-          arrayExpressions[i] = arrayExpressions[j];
-          arrayExpressions[j] = temp;
-        }
-      }
-    }
-*/
     return arrayExpressions;
   }
 }

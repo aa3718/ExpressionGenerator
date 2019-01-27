@@ -4,13 +4,13 @@ public abstract class BinaryExpression implements Expression {
 
   protected int left;
   protected int right;
-  protected Expression left_exp;
-  protected Expression right_exp;
+  protected Expression leftExp;
+  protected Expression rightExp;
   protected int depth;
 
   public BinaryExpression(Expression left1, Expression right1) {
-    left_exp = left1;
-    right_exp = right1;
+    leftExp = left1;
+    rightExp = right1;
     left = left1.evaluate();
     right = right1.evaluate();
   }
@@ -28,11 +28,11 @@ public abstract class BinaryExpression implements Expression {
 
   public Expression getLeft() {
 
-    return left_exp;
+    return leftExp;
   }
 
   public Expression getRight() {
-    return right_exp;
+    return rightExp;
   }
 
   public boolean equals(Object e) {
@@ -43,5 +43,4 @@ public abstract class BinaryExpression implements Expression {
   }
 
   public abstract int compareTo(Expression other);
-
-  }
+}

@@ -6,14 +6,14 @@ public class Subtraction extends BinaryExpression {
     super(left, right);
   }
 
-  NaturalNumber Nn = new NaturalNumber(left - right);
+  private NaturalNumber natNum = new NaturalNumber(left - right);
 
   public int evaluate() {
-    return Nn.evaluate();
+    return natNum.evaluate();
   }
 
   public int depth() {
-    this.depth = Math.max(this.left_exp.depth(), this.right_exp.depth()) + 1;
+    this.depth = Math.max(this.leftExp.depth(), this.rightExp.depth()) + 1;
     return this.depth;
   }
 

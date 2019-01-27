@@ -6,14 +6,7 @@ public class Addition extends BinaryExpression {
     super(left, right);
   }
 
-  /*private final int value;
-
-  public Addition(Expression left, Expression right) {
-
-    value = left.evaluate() + right.evaluate();
-  }*/
-
-  NaturalNumber Nn = new NaturalNumber(left + right);
+  private NaturalNumber natNum = new NaturalNumber(left + right);
 
   @Override
   public String toString() {
@@ -21,13 +14,11 @@ public class Addition extends BinaryExpression {
   }
 
   public int evaluate() {
-    return Nn.evaluate();
-
-    // return this.left + this.right;
+    return natNum.evaluate();
   }
 
   public int depth() {
-    this.depth = Math.max(this.left_exp.depth(), this.right_exp.depth()) + 1;
+    this.depth = Math.max(this.leftExp.depth(), this.rightExp.depth()) + 1;
     return this.depth;
   }
 
