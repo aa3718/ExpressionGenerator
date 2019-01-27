@@ -50,6 +50,7 @@ public class AdditionTest {
 
     int expectedOutput = 1;
     int output = d.getLeft().evaluate();
+
     final String errorMsg =
         String.format("Problem adding getLeft of the following addition: %s", d);
     assertThat(errorMsg, output, equalTo(expectedOutput));
@@ -62,8 +63,10 @@ public class AdditionTest {
     Addition c = new Addition(new NaturalNumber(1), b);
     Addition d = new Addition(new NaturalNumber(1), c);
 
+
     int expectedOutput = 4;
     int output = d.getRight().evaluate();
+    System.out.println(d.depth + " depth");
     final String errorMsg = String.format("Problem evaluating getRight of addition: %s", d);
     assertThat(errorMsg, output, equalTo(expectedOutput));
   }

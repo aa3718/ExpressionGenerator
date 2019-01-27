@@ -4,6 +4,11 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
 
+import ic.doc.co575.Addition;
+import ic.doc.co575.Expression;
+import ic.doc.co575.NaturalNumber;
+import ic.doc.co575.Product;
+import ic.doc.co575.Subtraction;
 import org.junit.Test;
 
 public class AbstractExpressionTest {
@@ -47,8 +52,11 @@ public class AbstractExpressionTest {
             + " and "
             + c.evaluate();
     // compareTo returns negative if the object is less than the argument. i.e., d is less than c.
+
     if (d.compareTo(c) >= 0) {
       fail(errorMsg);
     }
+
   }
+
 }

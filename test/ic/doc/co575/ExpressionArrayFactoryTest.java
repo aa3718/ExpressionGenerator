@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
 
+import ic.doc.co575.Expression;
 import org.junit.Test;
 
 public class ExpressionArrayFactoryTest {

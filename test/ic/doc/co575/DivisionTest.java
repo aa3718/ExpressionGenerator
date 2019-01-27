@@ -4,6 +4,10 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.fail;
 
+import ic.doc.co575.Addition;
+import ic.doc.co575.Division;
+//import ic.doc.co575.Expression;
+import ic.doc.co575.NaturalNumber;
 import org.junit.Test;
 
 public class DivisionTest {
@@ -52,4 +56,5 @@ public class DivisionTest {
     final String errorMsg = String.format("Problem dividing: %s", a);
     assertThat(errorMsg, output, equalTo(expectedOutput));
   }
+
 }
